@@ -1,0 +1,507 @@
+John Layson (35):
+      Initial commit
+      Initial commit: Project Creation
+      Added package
+      Created classes, filled Stock a bit
+      Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+      Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+      small line break edits
+      Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+      Items should be fully functional. Item() -> Separated into DryItems and Refrigerated Items Stock is using <Set> as a collection, may need to swap to <Map> OR Manifest will use <Map>
+      Before pulling manifest, added GUI file, Changed some Tests
+      updating both of our versions
+      updating both of our versions 2
+      Change Store()'s setCapital return type. Cleaned clutter in MainTest.
+      Trying to fix conflict
+      Added all GUI components and 2 Functionalities: Load Items, Generate Manifest.
+      Renamed MainTest to TestDriven: This class is used to test stuff before put into GUI. Changed Temperature names, created more with dupes. Manifest changed Path to my Local PC accordingly.
+      Features added in GUI: Load Manifest, Update Capital(Math needs work). Changed capital from int to double in Store.java. Test Restocking inventory: In progress.
+      Complete updateStore() to restock items
+      SuperMartGUI: Removed commented clutter. TestDrivenClass: -Commented out clutter print statements for observation. -Able to change items' quantitys inventory from loading sales log.
+      TestDriven: Income calculation, update inventory and capital works from loading a sales log. SuperMartGUI: Implemented loading of Sales Log as well as updating the store's inventory and capital.
+      NEEDS FIXING URGENT. GENERATE MANIFEST BUG
+      Fixed LoadManifest 'URGENT' issue, loading from manifest updates capital and inventory correctly now. If statements were tested in TestDrivenClass before GUI implementation
+      Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+      Fixed mergers
+      Added all my Java classes' Javadoc Comments.
+      Added all my Java classes' Javadoc Comments.
+      classes sorted into new packages, testing GUI table(not working), Junit testing started
+      Finished JUnit testing for partner's Classes
+      Finished JUnit testing for partner's Classes(updated a typo)
+      Created exceptions package and classes. Updated SuperMart to use StockException(Functioning). Not using the other 2 exceptions yet. No inventory table in GUI.
+      Code quality checked in Items and Stock, minor spacing changes in TestCases, inventory table fully functioning in GUI
+      Final changes to GUI, table was a little off the panel
+      Fixed parameter descriptions for javadoc
+      Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+      Added a README PLEASE.txt file for some necessary program context
+
+Nathan (13):
+      added constructors to trucks etc
+      update to Refrigerated and Trucks apparently
+      update to Refrigerated and Trucks apparently
+      put listedHashSet data into HashMap
+      Manifest generation, converting sets to HashMaps
+      Updated Trucks, OrdinaryTruck, RefrigeratedTruck, added truck calculations (unfinished)
+      Changed block number
+      Fixed conflicts
+      all sales log functionality completed. Commented java files, and deleted distribution centre
+      finish code quality, javadoc comments, report
+      finish code quality, javadoc comments, report
+      Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+      javadoc comment touchup
+
+* 21710e4 Added a README PLEASE.txt file for some necessary program context
+*   3c3e4f1 Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+|\  
+| * 2c32b7f javadoc comment touchup
+* | fde9517 Fixed parameter descriptions for javadoc
+|/  
+*   fb69cc8 Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+|\  
+| * db7f61c Final changes to GUI, table was a little off the panel
+| * 1f782a7 Code quality checked in Items and Stock, minor spacing changes in TestCases, inventory table fully functioning in GUI
+| * eb45579 Created exceptions package and classes. Updated SuperMart to use StockException(Functioning). Not using the other 2 exceptions yet. No inventory table in GUI.
+| * 9fcfebf Finished JUnit testing for partner's Classes(updated a typo)
+| * 2b7b22e Finished JUnit testing for partner's Classes
+* | a9c64a4 finish code quality, javadoc comments, report
+* | 70baa1f finish code quality, javadoc comments, report
+|/  
+* e3ac46b classes sorted into new packages, testing GUI table(not working), Junit testing started
+*   224a72e Added all my Java classes' Javadoc Comments.
+|\  
+| * 9a0d6f7 all sales log functionality completed. Commented java files, and deleted distribution centre
+* | 495e01c Added all my Java classes' Javadoc Comments.
+|/  
+* df1d869 Fixed mergers
+*   95618bb Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+|\  
+| *   c760e9d Fixed conflicts
+| |\  
+| * | 31bd0eb Changed block number
+* | | 7329a70 Fixed LoadManifest 'URGENT' issue, loading from manifest updates capital and inventory correctly now. If statements were tested in TestDrivenClass before GUI implementation
+| |/  
+|/|   
+* | 0c3972f NEEDS FIXING URGENT. GENERATE MANIFEST BUG
+* | 9bbb277 TestDriven: Income calculation, update inventory and capital works from loading a sales log. SuperMartGUI: Implemented loading of Sales Log as well as updating the store's inventory and capital.
+* | 031f9ba SuperMartGUI: Removed commented clutter. TestDrivenClass: -Commented out clutter print statements for observation. -Able to change items' quantitys inventory from loading sales log.
+* | 9359331 Complete updateStore() to restock items
+* | 52b15a1 Features added in GUI: Load Manifest, Update Capital(Math needs work). Changed capital from int to double in Store.java. Test Restocking inventory: In progress.
+|/  
+* 16c8576 Updated Trucks, OrdinaryTruck, RefrigeratedTruck, added truck calculations (unfinished)
+* 198266d Renamed MainTest to TestDriven: This class is used to test stuff before put into GUI. Changed Temperature names, created more with dupes. Manifest changed Path to my Local PC accordingly.
+* 485bf91 Added all GUI components and 2 Functionalities: Load Items, Generate Manifest.
+*   fc8828c Trying to fix conflict
+|\  
+| * db0191c Manifest generation, converting sets to HashMaps
+* | f324f15 Change Store()'s setCapital return type. Cleaned clutter in MainTest.
+|/  
+* 015b7c7 updating both of our versions 2
+*   08aab93 updating both of our versions
+|\  
+| * 5402a30 put listedHashSet data into HashMap
+| *   16b95d2 update to Refrigerated and Trucks apparently
+| |\  
+| * | 1db86c4 update to Refrigerated and Trucks apparently
+* | | 63604a1 Before pulling manifest, added GUI file, Changed some Tests
+| |/  
+|/|   
+* | e35c338 Items should be fully functional. Item() -> Separated into DryItems and Refrigerated Items Stock is using <Set> as a collection, may need to swap to <Map> OR Manifest will use <Map>
+* |   6ec341e Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+|\ \  
+| |/  
+| * c4d7149 added constructors to trucks etc
+* | 1d3c9e5 small line break edits
+|/  
+* f6d361c Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+* 6524b93 Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+* 78ed154 Created classes, filled Stock a bit
+* 4526284 Added package
+* f4d65b3 Initial commit: Project Creation
+* 6c81368 Initial commit
+commit 21710e465dcc7e2ee5b0c55706cda7385920851f
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 27 00:15:14 2018 +1000
+
+    Added a README PLEASE.txt file for some necessary program context
+
+ 94 files changed, 208 insertions(+), 205 deletions(-)
+
+commit 3c3e4f15e9ef13bfca19332a2d15bef9f79807a0
+Merge: fde9517 2c32b7f
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 27 00:04:53 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+
+commit fde9517493ed9173c9387c5e0ac5ad6af46999c0
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 27 00:04:26 2018 +1000
+
+    Fixed parameter descriptions for javadoc
+
+ 101 files changed, 18557 insertions(+), 6 deletions(-)
+
+commit 2c32b7f6689b48372fbecf88e8730bb1e72c3438
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sun May 27 00:02:30 2018 +1000
+
+    javadoc comment touchup
+
+ 3 files changed, 15 insertions(+), 15 deletions(-)
+
+commit fb69cc880c21763975637a25dfc5be567479e85c
+Merge: a9c64a4 db7f61c
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sat May 26 23:11:28 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+
+commit a9c64a4cdcdc1fa13339f631e67a3cb9ad546c32
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sat May 26 23:01:56 2018 +1000
+
+    finish code quality, javadoc comments, report
+
+ 9 files changed, 500 insertions(+), 83 deletions(-)
+
+commit 70baa1fc13fbfd10f3b8bf5c314ed71759741df3
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sat May 26 22:59:01 2018 +1000
+
+    finish code quality, javadoc comments, report
+
+ 8 files changed, 276 insertions(+), 5 deletions(-)
+
+commit db7f61c5e9b28ad897e6cc6b87bce300645e4dcf
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 26 22:57:47 2018 +1000
+
+    Final changes to GUI, table was a little off the panel
+
+ 2 files changed, 2 insertions(+), 11 deletions(-)
+
+commit 1f782a70c1a5cc77fe93ab4c04143c684c41c7ab
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 26 13:00:16 2018 +1000
+
+    Code quality checked in Items and Stock, minor spacing changes in TestCases, inventory table fully functioning in GUI
+
+ 7 files changed, 224 insertions(+), 40 deletions(-)
+
+commit eb45579a233081e5ca70b8cbfcdc7ece2fd5fa79
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 25 21:40:32 2018 +1000
+
+    Created exceptions package and classes. Updated SuperMart to use StockException(Functioning). Not using the other 2 exceptions yet. No inventory table in GUI.
+
+ 6 files changed, 158 insertions(+), 58 deletions(-)
+
+commit 9fcfebf48e59912f2c8e1f1c1467380429558da6
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 25 19:33:23 2018 +1000
+
+    Finished JUnit testing for partner's Classes(updated a typo)
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2b7b22e2e9648e85c4a38fba1e3a21215a50b1ee
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 25 19:32:24 2018 +1000
+
+    Finished JUnit testing for partner's Classes
+
+ 1 file changed, 144 insertions(+), 1 deletion(-)
+
+commit e3ac46b4afb4f26ccd37b3481f672311049c1221
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 25 18:11:58 2018 +1000
+
+    classes sorted into new packages, testing GUI table(not working), Junit testing started
+
+ 17 files changed, 1050 insertions(+), 32 deletions(-)
+
+commit 224a72e30a1de8a61074d741debcb3f4f1c4671c
+Merge: 495e01c 9a0d6f7
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 14:57:12 2018 +1000
+
+    Added all my Java classes' Javadoc Comments.
+
+commit 495e01c812c537846d19bbee1e46a83e899a4246
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 14:53:37 2018 +1000
+
+    Added all my Java classes' Javadoc Comments.
+
+ 8 files changed, 158 insertions(+), 46 deletions(-)
+
+commit 9a0d6f79a7627b66fbf0c53c9a28914cb8078dc5
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sun May 20 14:49:28 2018 +1000
+
+    all sales log functionality completed. Commented java files, and deleted distribution centre
+
+ 8 files changed, 463 insertions(+), 55 deletions(-)
+
+commit df1d869a9ebba2dc0eda0598c9657307a39ea895
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 03:16:45 2018 +1000
+
+    Fixed mergers
+
+ 2 files changed, 26 deletions(-)
+
+commit 95618bb2ebe1be9e42443b0168fd84693fdab9bf
+Merge: 7329a70 c760e9d
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 03:15:16 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+
+commit 7329a70de410962ec56cbe29a8a0d5856a527324
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 03:12:55 2018 +1000
+
+    Fixed LoadManifest 'URGENT' issue, loading from manifest updates capital and inventory correctly now.
+    If statements were tested in TestDrivenClass before GUI implementation
+
+ 3 files changed, 31 insertions(+), 19 deletions(-)
+
+commit c760e9dcbba021007687d239d599dbc458b3ce86
+Merge: 31bd0eb 0c3972f
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sun May 20 00:35:23 2018 +1000
+
+    Fixed conflicts
+
+commit 31bd0eb511a2b64d35ebb65209923c24e5378a1a
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sun May 20 00:28:40 2018 +1000
+
+    Changed block number
+
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+commit 0c3972ff75a13884f037f1b61cfe261d772b18a2
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 20 00:17:29 2018 +1000
+
+    NEEDS FIXING URGENT. GENERATE MANIFEST BUG
+
+ 1 file changed, 1 insertion(+)
+
+commit 9bbb2770dddeadb19e82c2fa387c9d83717a17d4
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 23:51:59 2018 +1000
+
+    TestDriven: Income calculation, update inventory and capital works from loading a sales log.
+    SuperMartGUI: Implemented loading of Sales Log as well as updating the store's inventory and capital.
+
+ 2 files changed, 270 insertions(+), 11 deletions(-)
+
+commit 031f9ba954b9f0a457f77053e0e82eff52152bb2
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 22:49:12 2018 +1000
+
+    SuperMartGUI: Removed commented clutter.
+    TestDrivenClass:
+    -Commented out clutter print statements for observation.
+    -Able to change items' quantitys inventory from loading sales log.
+
+ 2 files changed, 51 insertions(+), 22 deletions(-)
+
+commit 93593311e30f0b442c7c4721aa94d4f814b4c770
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 22:21:04 2018 +1000
+
+    Complete updateStore() to restock items
+
+ 1 file changed, 20 insertions(+), 1 deletion(-)
+
+commit 52b15a1d65cf656d578a55f4ac77c446b79e14b2
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 22:10:35 2018 +1000
+
+    Features added in GUI: Load Manifest, Update Capital(Math needs work).
+    Changed capital from int to double in Store.java.
+    Test Restocking inventory: In progress.
+
+ 3 files changed, 331 insertions(+), 13 deletions(-)
+
+commit 16c857645c10ce521794968256bc6b76ecdf3d8c
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sat May 19 19:58:33 2018 +1000
+
+    Updated Trucks, OrdinaryTruck, RefrigeratedTruck, added truck calculations (unfinished)
+
+ 6 files changed, 222 insertions(+), 63 deletions(-)
+
+commit 198266da0884ffb1d7102d739b55c50aaee185fb
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 19:40:30 2018 +1000
+
+    Renamed MainTest to TestDriven: This class is used to test stuff before put into GUI.
+    Changed Temperature names, created more with dupes.
+    Manifest changed Path to my Local PC accordingly.
+
+ 4 files changed, 357 insertions(+), 160 deletions(-)
+
+commit 485bf91d926cbb1efdbd4eaf0d26a2956f4b5e77
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 15:09:00 2018 +1000
+
+    Added all GUI components and 2 Functionalities: Load Items, Generate Manifest.
+
+ 2 files changed, 358 insertions(+), 51 deletions(-)
+
+commit fc8828c82c6505e75026189aa0550a6155330933
+Merge: f324f15 db0191c
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 15:00:51 2018 +1000
+
+    Trying to fix conflict
+
+commit f324f151c2451ac4f41efbc3ef69b3985275dabf
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 19 14:57:15 2018 +1000
+
+    Change Store()'s setCapital return type. Cleaned clutter in MainTest.
+
+ 4 files changed, 21 insertions(+), 52 deletions(-)
+
+commit db0191c74077c8275c65b67f050c476c2fd82135
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sat May 19 14:46:07 2018 +1000
+
+    Manifest generation, converting sets to HashMaps
+
+ 3 files changed, 137 insertions(+), 16 deletions(-)
+
+commit 015b7c7cef8ebc8a8381ce5623ce43a2779a2aa2
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 18 19:08:08 2018 +1000
+
+    updating both of our versions 2
+
+ 2 files changed, 7 insertions(+), 134 deletions(-)
+
+commit 08aab9314de69736282122ac45d90ef807f18353
+Merge: 63604a1 5402a30
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 18 19:05:14 2018 +1000
+
+    updating both of our versions
+
+commit 63604a17d86cb2f054d0a18dc2c11edfb4fe5eca
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Fri May 18 18:58:03 2018 +1000
+
+    Before pulling manifest, added GUI file, Changed some Tests
+
+ 5 files changed, 229 insertions(+), 9 deletions(-)
+
+commit 5402a308364e58eedff98579ea0287204129dc2e
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Fri May 18 17:20:51 2018 +1000
+
+    put listedHashSet data into HashMap
+
+ 2 files changed, 120 insertions(+), 36 deletions(-)
+
+commit 16b95d293f617e93ae909e65a2544ac5288faeae
+Merge: 1db86c4 e35c338
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Wed May 16 00:16:46 2018 +1000
+
+    update to Refrigerated and Trucks apparently
+
+commit 1db86c48bbc19ad1b1394f89f966270a8e463eff
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Wed May 16 00:14:14 2018 +1000
+
+    update to Refrigerated and Trucks apparently
+
+ 3 files changed, 33 insertions(+), 18 deletions(-)
+
+commit e35c338389da69a20763fec9870b796eab91d78c
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Tue May 15 23:23:56 2018 +1000
+
+    Items should be fully functional.
+    Item() -> Separated into DryItems and Refrigerated Items
+    Stock is using <Set> as a collection, may need to swap to <Map>
+    OR
+    Manifest will use <Map>
+
+ 16 files changed, 482 insertions(+), 92 deletions(-)
+
+commit 6ec341ea2eff21ac0ecd6febc968778d9404d8f9
+Merge: 1d3c9e5 c4d7149
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 13 22:02:50 2018 +1000
+
+    Merge branch 'master' of https://bitbucket.org/jlayson/inventory-management-application-john-layson-nathan-thai
+
+commit 1d3c9e59287256f2dc64de3ca5a8b7b19650f575
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 13 21:59:26 2018 +1000
+
+    small line break edits
+
+ 3 files changed, 10 insertions(+), 4 deletions(-)
+
+commit c4d71497c0c7bad6c253b2018008ca92e14b35e5
+Author: Nathan <nathan.thai@connect.qut.edu.au>
+Date:   Sun May 13 21:57:38 2018 +1000
+
+    added constructors to trucks etc
+
+ 5 files changed, 59 insertions(+)
+
+commit f6d361c5c64d6bdc35cfa77bcc449f43ffd8452b
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 13 20:26:31 2018 +1000
+
+    Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+
+ 10 files changed, 168 insertions(+), 60 deletions(-)
+
+commit 6524b933d5e1bc918d8396323b8703da08e6d112
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sun May 13 20:25:33 2018 +1000
+
+    Changed inheritance hierarchy, almost done functionality in itself: Needs to parse csv to parameters
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 78ed1542c20deab11dd34aa9961d3cae2c065a96
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 12 21:38:20 2018 +1000
+
+    Created classes, filled Stock a bit
+
+ 8 files changed, 92 insertions(+), 10 deletions(-)
+
+commit 4526284860c3850785ef8e850bbbbb2c80ffbef9
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 12 19:28:21 2018 +1000
+
+    Added package
+
+ 1 file changed, 10 insertions(+)
+
+commit f4d65b3659c4b47d8618a647f4578edc3bb83095
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 12 18:55:59 2018 +1000
+
+    Initial commit: Project Creation
+
+ 4 files changed, 35 insertions(+)
+
+commit 6c81368f6df8231fc4b58e9858ca34e3464068a4
+Author: John Layson <john.layson@connect.qut.edu.au>
+Date:   Sat May 12 08:14:18 2018 +0000
+
+    Initial commit
+
+ 1 file changed, 45 insertions(+)
